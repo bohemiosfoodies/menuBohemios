@@ -1,9 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta http-equiv="refresh" content="0; url=MenuEspañolBohemios.pdf">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Bohemios - Elegir Idioma</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fdfaf6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #2c3e50;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #d35400;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .welcome-text {
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .btn-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-menu:active {
+            transform: scale(0.98);
+        }
+
+        .btn-es { background-color: #d35400; } /* Naranja para Español */
+        .btn-en { background-color: #2c3e50; } /* Azul para Inglés */
+
+        .flag {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
-    <p>Cargando menú... Si no redirige, <a href="MenuEspañolBohemios.pdf">haz clic aquí</a>.</p>
+
+    <div class="logo">BOHEMIOS</div>
+    <p class="welcome-text">Select your language / Selecciona tu idioma</p>
+
+    <div class="container">
+        <a href="MenuEspañolBohemios.pdf" class="btn-menu btn-es">
+            <span class="flag">🇪🇸</span> Ver Menú en Español
+        </a>
+
+        <a href="MenuInlgesBohemios.pdf" class="btn-menu btn-en">
+            <span class="flag">🇬🇧</span> View English Menu
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 Bohemios Restaurante
+    </footer>
+
 </body>
 </html>
