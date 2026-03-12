@@ -1,152 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Bohemios - Sabor Auténtico</title>
-    <style>
-        :root {
-            --primary: #d35400; /* Naranja Bohemio */
-            --secondary: #2c3e50;
-            --accent: #27ae60;
-            --bg: #fdfaf6;
-            --text: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Bohemios</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: var(--bg);
-            margin: 0;
-            padding: 0;
-        }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#fafafa;
+    color:#222;
+}
 
-        header {
-            background-color: var(--secondary);
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-            border-bottom: 5px solid var(--primary);
-        }
+header{
+    background:#111;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
 
-        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
-        header p { margin: 5px 0 0; font-style: italic; opacity: 0.9; }
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
+section{
+    margin-bottom:40px;
+}
 
-        .section-title {
-            background: var(--primary);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-top: 30px;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-        }
+h2{
+    border-bottom:2px solid #eee;
+    padding-bottom:5px;
+}
 
-        .item {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin: 15px 0 5px;
-            border-bottom: 1px dotted #ccc;
-        }
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    margin:6px 0;
+}
 
-        .item-name { font-weight: bold; font-size: 1.1rem; color: var(--secondary); }
-        .item-price { font-weight: bold; color: var(--primary); white-space: nowrap; margin-left: 10px; }
-        .item-desc { font-size: 0.9rem; color: #666; margin-bottom: 15px; display: block; }
+.description{
+    font-size:0.9em;
+    color:#555;
+    margin-left:10px;
+}
 
-        .combo-box {
-            background: #fff3e0;
-            border: 2px dashed var(--primary);
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
+.combo{
+    background:#f1f1f1;
+    padding:15px;
+    border-radius:8px;
+}
 
-        .badge {
-            background: var(--accent);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 0.7rem;
-            vertical-align: middle;
-        }
+ul{
+    margin-top:8px;
+}
 
-        footer { text-align: center; padding: 30px; color: #888; font-size: 0.8rem; }
-    </style>
+footer{
+    text-align:center;
+    padding:20px;
+    color:#777;
+    font-size:0.9em;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>BOHEMIOS</h1>
-    <p>"Auténtico sabor casero"</p>
+<h1>Menú Bohemios</h1>
 </header>
 
 <div class="container">
 
-    <h2 class="section-title">Cafetería</h2>
-    <div class="item"><span class="item-name">Café Expreso</span><span class="item-price">1,20€</span></div>
-    <div class="item"><span class="item-name">Cortado Natural</span><span class="item-price">1,30€</span></div>
-    <span class="item-desc">Café corto con leche.</span>
-    <div class="item"><span class="item-name">Cortado Leche y Leche</span><span class="item-price">1,40€</span></div>
-    <span class="item-desc">Café corto con leche normal y leche condensada.</span>
-    <div class="item"><span class="item-name">Barraquito</span><span class="item-price">2,00€</span></div>
-    <span class="item-desc">Café canario espectacular con leche condensada, licor y canela.</span>
+<section>
+<h2>Café</h2>
 
-    <h2 class="section-title">Bohemian Arepones XXL</h2>
-    
-    <div class="item"><span class="item-name">Pabellón "La Experiencia Completa"</span><span class="item-price">8,00€</span></div>
-    <span class="item-desc">Carne mechada, caraotas negras, tajadas y queso llanero.</span>
+<div class="menu-item"><span>Café Expreso</span><span>1,20€</span></div>
 
-    <div class="item"><span class="item-name">Reina Pepeada</span><span class="item-price">7,90€</span></div>
-    <span class="item-desc">Joya de la corona. Ensalada cremosa de pollo y aguacate.</span>
+<div class="menu-item"><span>Cortado Natural</span><span>1,30€</span></div>
+<div class="description">Café corto con leche.</div>
 
-    <div class="item"><span class="item-name">Pelúa</span><span class="item-price">7,90€</span></div>
-    <span class="item-desc">Combo legendario de carne mechada tierna y una generosa capa de queso Gouda fundido.</span>
+<div class="menu-item"><span>Cortado Leche y Leche</span><span>1,40€</span></div>
+<div class="description">Café corto con leche normal y leche condensada.</div>
 
-    <div class="item"><span class="item-name">Viggi Bohemia <span class="badge">VEGETARIANA</span></span><span class="item-price">8,00€</span></div>
-    <span class="item-desc">Caraotas negras, queso blanco, plátano frito y pico de gallo.</span>
+<div class="menu-item"><span>Café con leche grande</span><span>1,80€</span></div>
 
-    <h2 class="section-title">Clásicos Venezolanos (Entrantes)</h2>
-    <div class="item"><span class="item-name">Tequeños (6 unidades)</span><span class="item-price">7,50€</span></div>
-    <span class="item-desc">Deditos de masa crujiente rellenos de queso blanco fundido.</span>
+<div class="menu-item"><span>Bombón</span><span>1,70€</span></div>
+<div class="description">Café con leche condensada.</div>
 
-    <div class="item"><span class="item-name">Tostones Playeros</span><span class="item-price">6,90€</span></div>
-    <span class="item-desc">4 ruedas de plátano verde fritas dos veces para máxima crocancia.</span>
+<div class="menu-item"><span>Cappuccino</span><span>2,00€</span></div>
 
-    <h2 class="section-title">Bebidas Tradicionales</h2>
-    <div class="item"><span class="item-name">Malta Polar</span><span class="item-price">2,00€</span></div>
-    <div class="item"><span class="item-name">Papelón con Limón</span><span class="item-price">2,00€</span></div>
-    <div class="item"><span class="item-name">Chicha</span><span class="item-price">3,50€</span></div>
-    <span class="item-desc">Bebida láctea, dulce y cremosa a base de pasta con un toque de canela.</span>
+<div class="menu-item"><span>Barraquito</span><span>2,00€</span></div>
+<div class="description">Café canario con leche condensada, licor y canela.</div>
 
-    <div class="combo-box">
-        <h3 style="margin-top:0; color:var(--primary)">✨ Combo Bohemian (Para 2)</h3>
-        <p><strong>Precio: 21,50€</strong></p>
-        <ul style="font-size: 0.9rem;">
-            <li>4 Arepitas tradicionales + 4 de chicharrón</li>
-            <li>4 Tequeños + 4 Tostones</li>
-            <li>3 Acompañamientos a elegir y 2 Bebidas (Papelón)</li>
-        </ul>
-    </div>
+<div class="menu-item"><span>Chocolate caliente</span><span>2,00€</span></div>
+</section>
 
-    <h2 class="section-title">Postres Caseros</h2>
-    <div class="item"><span class="item-name">Tarta 3 Leches</span><span class="item-price">3,90€</span></div>
-    <span class="item-desc">Bizcocho húmedo empapado en tres tipos de leche.</span>
 
-    <div class="item"><span class="item-name">Golfeados</span><span class="item-price">4,50€</span></div>
-    <span class="item-desc">Rollitos dulces y salados con papelón, queso blanco y anís.</span>
+<section>
+<h2>Bebidas</h2>
+
+<div class="menu-item">
+<span>Refrescos</span>
+<span>2,00€</span>
+</div>
+<div class="description">Fanta, Aquarius, Nestea, Tónica, Appletiser, Coca-Cola, Coca-Cola Zero</div>
+
+<h3>Cervezas</h3>
+
+<div class="menu-item"><span>Caña Estrella Damm</span><span>1,60€</span></div>
+<div class="menu-item"><span>Jarra Estrella Damm</span><span>2,50€</span></div>
+
+<div class="menu-item"><span>Caña Turia (Tostada)</span><span>2,00€</span></div>
+<div class="menu-item"><span>Jarra Turia</span><span>3,30€</span></div>
+
+<div class="menu-item"><span>Botella Estrella Levante</span><span>1,50€</span></div>
+
+<div class="menu-item"><span>Estrella Free Lemon</span><span>1,80€</span></div>
+
+<div class="menu-item"><span>Dorada Especial</span><span>2,00€</span></div>
+<div class="menu-item"><span>Dorada 0,0 Tostada</span><span>2,00€</span></div>
+<div class="menu-item"><span>Dorada Pilsen</span><span>1,60€</span></div>
+
+</section>
+
+
+<section>
+<h2>Bebidas Tradicionales Venezolanas</h2>
+
+<div class="menu-item"><span>Malta Polar</span><span>2,00€</span></div>
+
+<div class="menu-item"><span>Frescolita</span><span>2,00€</span></div>
+
+<div class="menu-item"><span>Papelón con Limón</span><span>2,00€</span></div>
+
+<div class="menu-item"><span>Chicha</span><span>3,50€</span></div>
+
+</section>
+
+
+<section>
+<h2>Bohemian Arepones XXL</h2>
+
+<div class="menu-item"><span>Pabellón "La Experiencia Completa"</span><span>8,00€</span></div>
+
+<div class="menu-item"><span>Pernil (Cerdo asado)</span><span>8,00€</span></div>
+
+<div class="menu-item"><span>Sifrina</span><span>8,00€</span></div>
+
+<div class="menu-item"><span>La Catira</span><span>7,90€</span></div>
+
+<div class="menu-item"><span>Jamón</span><span>6,00€</span></div>
+
+<div class="menu-item"><span>Queso</span><span>6,00€</span></div>
+
+<div class="menu-item"><span>Jamón y Queso</span><span>6,90€</span></div>
+
+<div class="menu-item"><span>Carne Mechada</span><span>7,90€</span></div>
+
+<div class="menu-item"><span>Salpicón de Atún</span><span>6,90€</span></div>
+
+<div class="menu-item"><span>Reina Pepeada</span><span>7,90€</span></div>
+
+<div class="menu-item"><span>Pelúa</span><span>7,90€</span></div>
+
+</section>
+
+
+<section>
+<h2>Combo Especial — 21,50€</h2>
+
+<div class="combo">
+<ul>
+<li>4 Arepitas tradicionales</li>
+<li>4 Tequeños</li>
+<li>4 Arepitas de chicharrón</li>
+<li>4 Tostones</li>
+<li>3 acompañamientos a elegir</li>
+<li>2 bebidas Papelón con limón</li>
+</ul>
+</div>
+
+</section>
+
+
+<section>
+<h2>Papas Fritas Gourmet</h2>
+
+<div class="menu-item"><span>Papas Locas</span><span>6,20€</span></div>
+
+<div class="menu-item"><span>Papas Trufadas</span><span>6,20€</span></div>
+
+<div class="menu-item"><span>Salchipapas</span><span>7,20€</span></div>
+
+<div class="menu-item"><span>Papas Bohemian</span><span>7,90€</span></div>
+
+<div class="menu-item"><span>Papas con Todo</span><span>9,90€</span></div>
+
+</section>
+
+
+<section>
+<h2>Postres Caseros</h2>
+
+<div class="menu-item"><span>Tarta 3 Leches</span><span>3,90€</span></div>
+
+<div class="menu-item"><span>Brownie con Helado de Vainilla</span><span>4,50€</span></div>
+
+<div class="menu-item"><span>Golfeados</span><span>4,50€</span></div>
+
+</section>
 
 </div>
 
 <footer>
-    <p>&copy; 2024 Bohemios Restaurante<br>Sabor Venezolano Real</p>
+Menú Bohemios
 </footer>
 
 </body>
